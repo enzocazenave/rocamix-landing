@@ -1,0 +1,49 @@
+<html lang="es" class="antialiased">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rocamix Hormigones</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#FAF9F6]">
+    <section class="h-screen max-h-screen flex flex-col">
+      <header class="px-12 py-6 flex justify-between items-center flex-none">
+        <img class="object-cover max-w-44" src="./logo.png" alt="Logo de Rocamix" />
+        <nav></nav>
+      </header>
+
+      <div class="flex-1 flex justify-center items-center overflow-hidden relative">
+        <div class="absolute w-full h-full bg-black bg-opacity-50 left-0 top-0 z-40"></div>
+
+        <figure class="absolute top-1/2 right-12 -translate-y-1/2 bg-black-rocamix z-50 p-12 rounded-md max-w-2xl shadow-xl">
+          <h1 class="text-white-rocamix font-medium tracking-widest">Rocamix Hormigones</h1>
+          <h2 class="text-orange-rocamix font-bold text-5xl mt-4 text-pretty">Todo éxito comienza con una base sólida.</h2>
+          <p class="text-white-rocamix font-medium mt-4 text-pretty">Nuestros mixers están listos para iniciar tu proyecto con la mejor calidad de hormigón del mercado.</p>
+          <button class="bg-orange-rocamix px-11 py-4 mt-9 font-semibold text-white-rocamix border-2 border-transparent rounded hover:border-2 hover:bg-transparent hover:border-orange-rocamix hover:text-orange-rocamix transition-colors">
+            CONTÁCTANOS
+          </button>
+        </figure>
+
+        <footer class="absolute bottom-4 left-1/2 -translate-x-1/2 py-2 px-4 rounded-full bg-opacity-30 z-50 flex gap-2 bg-black-rocamix">
+          <button class="bg-orange-2-rocamix p-1 rounded-full"></button>
+          <button class="bg-orange-2-rocamix bg-opacity-50 p-1 rounded-full"></button>
+        </footer>
+
+        <div class="flex flex-nowrap transition-transform duration-1000" id="slider">
+          <img src="./carousel-1.jpg" class="w-full object-cover aspect-video" alt="Imagenes de fondo en un slider" />
+          <img src="./carousel-2.jpg" class="w-full object-cover aspect-video" alt="Imagenes de fondo en un slider" />
+        </div>
+      </div>
+
+      <header class="px-12 py-6 flex justify-between items-center flex-none">
+        <img class="object-cover max-w-44 invisible" src="./logo.png" alt="Logo de Rocamix" />
+        <nav></nav>
+      </header>
+    </section>
+    
+    <script src="./slider.js"></script>
+  </body>
+</html>
