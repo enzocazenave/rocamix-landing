@@ -78,7 +78,6 @@ const generateNodeButtons = () => {
     }
 
     button.addEventListener('click', handleChangeSlide)
-
     sliderNodes.appendChild(button)
   }
 }

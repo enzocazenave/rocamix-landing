@@ -1,4 +1,4 @@
-<html lang="es" class="antialiased">
+<html lang="es" class="antialiased scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,15 +10,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body class="bg-[#FAF9F6]">
-    <section class="h-screen max-h-screen flex flex-col">
-      <header class="px-12 py-6 flex justify-between items-center flex-none">
-        <img class="object-cover max-w-44" src="./assets/logo.png" alt="Logo de Rocamix" />
-        <nav></nav>
-      </header>
+    <header id="header" class="px-12 py-6 flex justify-between items-center flex-none fixed bg-[#FAF9F6] z-[999] w-full">
+      <img class="object-cover max-w-44" src="./assets/logo.png" alt="Logo de Rocamix" />
+      <nav>
+        <ul class="flex gap-8">
+          <li><a href="#home" class="text-xl hover:text-orange-2-rocamix transition-colors">Inicio</a></li>
+          <li><a href="#we" class="text-xl hover:text-orange-2-rocamix transition-colors">Nosotros</a></li>
+          <li><a href="#services" class="text-xl hover:text-orange-2-rocamix transition-colors">Nuestros Servicios</a></li>
+          <li><a href="#contact" class="text-xl hover:text-orange-2-rocamix transition-colors">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <section class="h-screen max-h-screen flex flex-col pt-[91px]" id="home">
       <div class="flex-1 flex justify-center items-center overflow-hidden relative">
         <div class="absolute w-full h-full bg-black bg-opacity-50 left-0 top-0 z-40"></div>
-
         <div class="h-1 bg-orange-rocamix top-0 w-full absolute z-50 no-shrink" id="slider-top-bar"></div>
         <div class="h-1 bg-orange-rocamix bottom-0 w-full absolute z-50 no-shrink" id="slider-bottom-bar"></div>
 
@@ -26,7 +32,7 @@
           <h1 class="text-white-rocamix font-medium tracking-widest">Rocamix Hormigones</h1>
           <h2 class="text-orange-rocamix font-bold text-5xl mt-4 text-pretty gradient-text">Todo éxito comienza con una base sólida.</h2>
           <p class="text-white-rocamix font-medium mt-4 text-pretty">Nuestros mixers están listos para iniciar tu proyecto con la mejor calidad de hormigón del mercado.</p>
-          <button class="bg-orange-rocamix px-11 py-4 mt-9 font-semibold text-white-rocamix border-2 border-transparent rounded hover:border-2 hover:bg-transparent hover:border-orange-rocamix hover:text-orange-rocamix transition-colors">
+          <button class="bg-orange-rocamix px-11 py-4 mt-9 font-semibold text-white border-2 border-transparent rounded hover:border-2 hover:bg-transparent hover:border-orange-rocamix hover:text-orange-rocamix transition-colors">
             CONTÁCTANOS
           </button>
         </figure>
@@ -48,24 +54,24 @@
       </header>
     </section>
 
-    <section class="flex gap-16 max-w-6xl mx-auto mt-44">
+    <section class="flex justify-center max-w-7xl mx-auto mt-44" id="we">
       <div class="flex-1 relative">
         <div class="absolute w-[430px] h-[640px] rounded-full overflow-hidden -top-[10%]">
           <img src="./assets/nosotros-1.jpg" class="grayscale" />
         </div>
-        <div class="absolute w-[340px] h-[480px] rounded-full overflow-hidden border-[#FAF9F6] border-[24px] -bottom-[14%] right-0">
+        <div class="absolute w-[340px] h-[480px] rounded-full overflow-hidden border-[#FAF9F6] border-[24px] -bottom-[14%] right-[12%]">
           <img src="./assets/nosotros-2.jpg" />
         </div>
       </div>
 
       <div class="flex-1">
         <h2 class="font-syncopate text-5xl">Nosotros</h2>
-        <p class="text-balance mt-8">
+        <p class="text-balance mt-8 font-normal leading-loose">
           En <b>Rocamix Hormigones</b>, desde 2023, nos dedicamos a proporcionar hormigón de la más alta calidad. Garantizamos durabilidad y resistencia en cada proyecto. Nuestro compromiso con la excelencia y la satisfacción del cliente nos distingue como líderes en la industria. Confía en nosotros para construir una base sólida para tu futuro.
         </p>
 
         <div class="grid grid-cols-2 grid-rows-2 gap-8 mt-8">
-          <figure class="px-20 py-8 rounded-3xl shadow flex flex-col justify-center items-center">
+          <figure class="px-20 py-8 rounded-3xl shadow border flex flex-col justify-center items-center">
             <span class="font-syncopate text-orange-rocamix text-4xl">2023</span>
             <p class="text-lg mt-4 text-center">Desde</p>
           </figure>
@@ -85,7 +91,7 @@
       </div>
     </section>
 
-    <section class="mt-40 px-12 mb-28">
+    <section class="mt-40 px-12 mb-28" id="services">
       <h2 class="text-4xl font-semibold text-center">Nuestros servicios</h2>
       <p class="text-orange-2-rocamix text-center mt-1">Quiénes somos</p>
 
@@ -122,9 +128,66 @@
     </section>
 
     <section class="bg-gradient-to-r from-[#f5a466] to-[#f58937] p-4">
-      <div class="max-w-6xl mx-auto">
+      <div class="max-w-7xl mx-auto">
         <img src="./assets/carousel-2.jpg" class="w-64 h-64 rounded-xl object-cover shadow" />
       </div>
+    </section>
+
+    <section class="mt-28 px-12" id="contact">
+      <h2 class="text-4xl font-semibold text-center">Contáctanos</h2>
+      <p class="text-orange-2-rocamix text-center mt-1">Envianos un mensaje</p>
+
+      <div class="grid grid-cols-2 mt-24 w-full gap-24">
+        <div class="flex flex-col justify-center items-center gap-4">
+          <div class="w-full h-[530px] border rounded-3xl shadow"></div>
+
+          <div class="flex-1 flex-col flex justify-center items-center gap-4">
+            <h3 class="text-4xl text-center">Ubicaciones donde trabajamos</h3>
+            <p class="text-center text-3xl font-extralight">Cañuelas, San Vicente, Ezeiza, Esteban Echeverria, Brandsen, Alejandro Korn, La Plata, Burzaco, Domselaar, etc</p>
+            <button class="bg-transparent border-none outline-none text-orange-2-rocamix font-semibold text-3xl">Consultar más</button>
+          </div>
+        </div>
+
+        <form class="rounded-3xl border p-14 flex flex-col gap-9 shadow h-full justify-center">
+          <h3 class="text-3xl font-semibold">Envianos un mensaje</h3>
+          <div>
+            <label class="mb-4 block text-xl">Nombre</label>
+            <input placeholder="Tomas" class="bg-[#FAF9F6] outline-none outline-offset-0 focus:outline-1 focus:outline-orange-2-rocamix border w-full p-4 rounded" autocomplete="off" />
+          </div>
+
+          <div>
+            <label class="mb-4 block text-xl">Correo electrónico</label>
+            <input placeholder="ejemplo@mail.com" class="bg-[#FAF9F6] outline-none outline-offset-0 focus:outline-1 focus:outline-orange-2-rocamix border w-full p-4 rounded" autocomplete="off" />
+          </div>
+
+          <div>
+            <label class="mb-4 block text-xl">Correo electrónico</label>
+            <textarea placeholder="ejemplo@mail.com" class="bg-[#FAF9F6] outline-none outline-offset-0 focus:outline-1 focus:outline-orange-2-rocamix h-52 w-full resize-none border p-4 rounded" autocomplete="off"></textarea>
+          </div>
+
+          <button class="bg-orange-rocamix w-fit px-11 py-4 font-semibold text-white border-2 border-transparent rounded hover:border-2 hover:bg-transparent hover:border-orange-rocamix hover:text-orange-rocamix transition-colors">
+            CONTÁCTANOS
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="mt-28 grid grid-cols-3  mx-auto w-full px-12 gap-16 mb-28">
+      <figure class="border shadow rounded-3xl p-12 flex flex-col items-center gap-5">
+        <img src="./assets/map-pin.svg" class="w-16 h-16" />
+        <h3 class="text-4xl font-semibold text-center">Dirección</h3>
+        <p class="text-2xl text-center">Chubut, B1865GUS, B1865 San Vicente</p>
+      </figure>
+      <figure class="border shadow rounded-3xl p-12 flex flex-col items-center gap-5">
+        <img src="./assets/phone.svg" class="w-16 h-16" />
+        <h3 class="text-4xl font-semibold text-center">Teléfono</h3>
+        <p class="text-2xl text-center">+54 11 2562 1116</p>
+      </figure>
+      <figure class="border shadow rounded-3xl p-12 flex flex-col items-center gap-5">
+        <img src="./assets/clock.svg" class="w-16 h-16" />
+        <h3 class="text-4xl font-semibold text-center">Horario de atención</h3>
+        <p class="text-2xl text-center">Lunes a Viernes: 09:00 - 18:00 Sábado: 10:00 - 16:00</p>
+      </figure>
     </section>
     
     <script src="./slider.js"></script>
