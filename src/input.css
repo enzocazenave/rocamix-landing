@@ -5,3 +5,9 @@
 * {
   font-family: 'Outfit', sans-serif;
 }
+
+.gradient-text {
+  background: linear-gradient(-90deg, #EC6907, #f5a466);
+  -webkit-background-clip: text;
+  color: transparent;
+}

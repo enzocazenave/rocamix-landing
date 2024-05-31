@@ -7,11 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body class="bg-[#FAF9F6]">
     <section class="h-screen max-h-screen flex flex-col">
       <header class="px-12 py-6 flex justify-between items-center flex-none">
-        <img class="object-cover max-w-44" src="./logo.png" alt="Logo de Rocamix" />
+        <img class="object-cover max-w-44" src="./assets/logo.png" alt="Logo de Rocamix" />
         <nav></nav>
       </header>
 
@@ -23,28 +24,107 @@
 
         <figure class="absolute top-1/2 right-12 -translate-y-1/2 bg-black-rocamix z-50 p-12 rounded-md max-w-2xl shadow-xl">
           <h1 class="text-white-rocamix font-medium tracking-widest">Rocamix Hormigones</h1>
-          <h2 class="text-orange-rocamix font-bold text-5xl mt-4 text-pretty">Todo éxito comienza con una base sólida.</h2>
+          <h2 class="text-orange-rocamix font-bold text-5xl mt-4 text-pretty gradient-text">Todo éxito comienza con una base sólida.</h2>
           <p class="text-white-rocamix font-medium mt-4 text-pretty">Nuestros mixers están listos para iniciar tu proyecto con la mejor calidad de hormigón del mercado.</p>
           <button class="bg-orange-rocamix px-11 py-4 mt-9 font-semibold text-white-rocamix border-2 border-transparent rounded hover:border-2 hover:bg-transparent hover:border-orange-rocamix hover:text-orange-rocamix transition-colors">
             CONTÁCTANOS
           </button>
         </figure>
 
-        <footer id="slider-nodes" class="absolute bottom-4 left-1/2 -translate-x-1/2 py-2 px-4 rounded-full bg-opacity-30 z-50 flex gap-2 bg-black-rocamix">
+        <footer id="slider-nodes" class="absolute bottom-5 left-1/2 -translate-x-1/2 py-2 px-4 rounded-full bg-opacity-30 z-50 flex gap-2 bg-black-rocamix">
         </footer>
 
         <div class="flex flex-nowrap transition-transform duration-1000" id="slider">
-          <img src="./carousel-1.jpg" class="w-full object-cover aspect-video" alt="Imagenes de fondo 1 de slider" />
-          <img src="./carousel-2.jpg" class="w-full object-cover aspect-video" alt="Imagenes de fondo 2 de slider" />
-          <img src="./carousel-3.jpg" class="w-full object-cover aspect-video" alt="Imagenes de fondo 3 de slider" />
-          <img src="./carousel-4.jpg" class="w-full object-cover aspect-video" alt="Imagenes de fondo 4 de slider" />
+          <img src="./assets/carousel-1.jpg" class="w-full object-cover aspect-video" alt="Imagenes de fondo 1 de slider" />
+          <img src="./assets/carousel-2.jpg" class="w-full object-cover aspect-video" alt="Imagenes de fondo 2 de slider" />
+          <img src="./assets/carousel-3.jpg" class="w-full object-cover aspect-video" alt="Imagenes de fondo 3 de slider" />
+          <img src="./assets/carousel-4.jpg" class="w-full object-cover aspect-video" alt="Imagenes de fondo 4 de slider" />
         </div>
       </div>
 
       <header class="px-12 py-6 flex justify-between items-center flex-none">
-        <img class="object-cover max-w-44 invisible" src="./logo.png" alt="Logo de Rocamix" />
+        <img class="object-cover max-w-44 invisible" src="./assets/logo.png" alt="Logo de Rocamix" />
         <nav></nav>
       </header>
+    </section>
+
+    <section class="flex gap-16 max-w-6xl mx-auto mt-44">
+      <div class="flex-1 relative">
+        <div class="absolute w-[430px] h-[640px] rounded-full overflow-hidden -top-[10%]">
+          <img src="./assets/nosotros-1.jpg" class="grayscale" />
+        </div>
+        <div class="absolute w-[340px] h-[480px] rounded-full overflow-hidden border-[#FAF9F6] border-[24px] -bottom-[14%] right-0">
+          <img src="./assets/nosotros-2.jpg" />
+        </div>
+      </div>
+
+      <div class="flex-1">
+        <h2 class="font-syncopate text-5xl">Nosotros</h2>
+        <p class="text-balance mt-8">
+          En <b>Rocamix Hormigones</b>, desde 2023, nos dedicamos a proporcionar hormigón de la más alta calidad. Garantizamos durabilidad y resistencia en cada proyecto. Nuestro compromiso con la excelencia y la satisfacción del cliente nos distingue como líderes en la industria. Confía en nosotros para construir una base sólida para tu futuro.
+        </p>
+
+        <div class="grid grid-cols-2 grid-rows-2 gap-8 mt-8">
+          <figure class="px-20 py-8 rounded-3xl shadow flex flex-col justify-center items-center">
+            <span class="font-syncopate text-orange-rocamix text-4xl">2023</span>
+            <p class="text-lg mt-4 text-center">Desde</p>
+          </figure>
+          <figure class="px-20 py-8 rounded-3xl shadow border flex flex-col justify-center items-center">
+            <span class="font-syncopate text-orange-rocamix text-4xl">+250</span>
+            <p class="text-lg mt-4 text-center">Trabajos realizados</p>
+          </figure>
+          <figure class="px-20 py-8 rounded-3xl shadow border flex flex-col justify-center items-center">
+            <span class="font-syncopate text-orange-rocamix text-4xl">5</span>
+            <p class="text-lg mt-4 text-center">Mixers</p>
+          </figure>
+          <figure class="px-20 py-8 rounded-3xl shadow border flex flex-col justify-center items-center">
+            <span class="font-syncopate text-orange-rocamix text-4xl">24/7</span>
+            <p class="text-lg mt-4 text-center">Atención</p>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-40 px-12 mb-28">
+      <h2 class="text-4xl font-semibold text-center">Nuestros servicios</h2>
+      <p class="text-orange-2-rocamix text-center mt-1">Quiénes somos</p>
+
+      <div class="grid grid-cols-4 mt-16 place-items-center gap-8">
+        <figure class="p-6 shadow-sm border rounded-3xl flex flex-col gap-2">
+          <div class="flex justify-between items-center">
+            <h3 class="text-xl font-semibold">Lorem ipsum</h3>
+            <img src="./assets/tractor.svg" class="w-10" />
+          </div>
+          <p class="font-normal text-pretty">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem reprehenderit amet quia minima corporis harum delectus minus.</p>
+        </figure>
+        <figure class="p-6 shadow-sm border rounded-3xl flex flex-col gap-2">
+          <div class="flex justify-between items-center">
+            <h3 class="text-xl font-semibold">Lorem ipsum</h3>
+            <img src="./assets/mixer.svg" class="w-10" />
+          </div>
+          <p class="font-normal text-pretty">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem reprehenderit amet quia minima corporis harum delectus minus.</p>
+        </figure>
+        <figure class="p-6 shadow-sm border rounded-3xl flex flex-col gap-2">
+          <div class="flex justify-between items-center">
+            <h3 class="text-xl font-semibold">Lorem ipsum</h3>
+            <img src="./assets/bag.svg" class="w-10" />
+          </div>
+          <p class="font-normal text-pretty">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem reprehenderit amet quia minima corporis harum delectus minus.</p>
+        </figure>
+        <figure class="p-6 shadow-sm border rounded-3xl flex flex-col gap-2">
+          <div class="flex justify-between items-center">
+            <h3 class="text-xl font-semibold">Lorem ipsum</h3>
+            <img src="./assets/worker.svg" class="w-10" />
+          </div>
+          <p class="font-normal text-pretty">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem reprehenderit amet quia minima corporis harum delectus minus.</p>
+        </figure>
+      </div>
+    </section>
+
+    <section class="bg-gradient-to-r from-[#f5a466] to-[#f58937] p-4">
+      <div class="max-w-6xl mx-auto">
+        <img src="./assets/carousel-2.jpg" class="w-64 h-64 rounded-xl object-cover shadow" />
+      </div>
     </section>
     
     <script src="./slider.js"></script>

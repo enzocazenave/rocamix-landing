@@ -8,6 +8,9 @@ module.exports = {
         'white-rocamix': '#DADADA',
         'black-rocamix': '#191919',
         'orange-2-rocamix': '#FF5722'
+      },
+      fontFamily: {
+        syncopate: 'Syncopate'
       }
     },
   },
