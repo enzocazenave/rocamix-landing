@@ -11,3 +11,15 @@
   -webkit-background-clip: text;
   color: transparent;
 }
+
+::-webkit-scrollbar {
+  width: 7px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(236,105, 7);
+}
