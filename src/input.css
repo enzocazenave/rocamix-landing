@@ -12,6 +12,12 @@
   color: transparent;
 }
 
+.gradient-text-2 {
+  background: linear-gradient(35deg, #ffffff, #ffcfab);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 ::-webkit-scrollbar {
   width: 7px; 
 }
