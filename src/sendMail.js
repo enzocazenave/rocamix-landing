@@ -1,8 +1,11 @@
 const sendMail = async(e) => {
   e.preventDefault()
-  const name = document.getElementById('input-name').value
-  const email = document.getElementById('input-email').value
-  const message = document.getElementById('input-message').value
+  const nameInput = document.getElementById('input-name')
+  const emailInput = document.getElementById('input-email')
+  const messageInput = document.getElementById('input-message')
+  const name = nameInput.value
+  const email = emailInput.value
+  const message = messageInput.value
 
   const pError = document.getElementById('contact-form-error')
 
@@ -24,15 +27,19 @@ const sendMail = async(e) => {
   try {
     const response = await fetch('https://cors-anywhere.herokuapp.com/https://api.resend.com/emails', {
       headers: {
-        Authorization: 'Bearer re_jdu1bos4_Bk2pzj5r7HA429W2jeKkERZh',
+        Authorization: 'Bearer re_Z9bH1UVx_5ZK2yPmEitCUXQ2S9bPcsmgu',
         'Content-Type': 'application/json'
       },
       method: 'POST',
       body: JSON.stringify({
-        from: `${name} <${email}>`,
-        to: ["corporate@ufodevelopment.com"],
-        subject: 'Consulta',
-        text: message,
+        from: `${name} <onboarding@resend.dev>`,
+        to: ['hormigones@rocamix.com.ar'],
+        subject: `Consulta - ${email}`,
+        html: `
+          <p><b>Nombre:</b> ${name}</p>
+          <p><b>Correo electrónico:</b> ${email}</p>
+          <p>${message}</p>
+        `,
         headers: {
           'X-Entity-Ref-ID': '123'
         },
@@ -44,6 +51,9 @@ const sendMail = async(e) => {
     } else {
       pError.classList.replace('text-red-500', 'text-green-500')
       pError.textContent = 'Mensaje enviado con éxito.'
+      nameInput.value = ''
+      emailInput.value = ''
+      messageInput.value = ''
     }
   } catch(error) {
     console.error(error)
