@@ -25,7 +25,7 @@ const sendMail = async(e) => {
   }
 
   try {
-    const response = await fetch('https://cors-anywhere.herokuapp.com/https://api.resend.com/emails', {
+    const response = await fetch('https://api.resend.com/emails', {
       headers: {
         Authorization: 'Bearer re_Z9bH1UVx_5ZK2yPmEitCUXQ2S9bPcsmgu',
         'Content-Type': 'application/json'
