@@ -47,7 +47,7 @@
         <div class="h-1 bg-orange-rocamix top-0 w-full absolute z-50 no-shrink" id="slider-top-bar"></div>
         <div class="h-1 bg-orange-rocamix bottom-0 w-full absolute z-50 no-shrink" id="slider-bottom-bar"></div>
 
-        <figure class="absolute top-1/2 right-12 max-[830px]:hidden -translate-y-1/2 bg-black-rocamix z-50 p-12 rounded-md max-w-2xl shadow-xl">
+        <figure class="absolute top-1/2 right-24 max-[830px]:hidden -translate-y-1/2 bg-black-rocamix z-50 p-12 rounded-md max-w-2xl shadow-xl">
           <h1 class="text-white-rocamix font-medium tracking-widest">Rocamix Hormigones</h1>
           <h2 class="text-orange-rocamix font-bold text-5xl mt-4 text-pretty gradient-text">Todo éxito comienza con una base sólida.</h2>
           <p class="text-white-rocamix font-medium mt-4 text-pretty">Nuestros mixers están listos para iniciar tu proyecto con la mejor calidad de hormigón del mercado.</p>
@@ -55,6 +55,18 @@
             CONTÁCTANOS
           </a>
         </figure>
+
+        <div class="absolute left-4 top-1/2 z-50 -translate-y-1/2">
+          <button class="p-8 pl-4 text-4xl font-black text-orange-rocamix" id="go-left-slider">
+            &lang;
+          </button>
+        </div>
+
+        <div class="absolute top-1/2 right-4 z-50 -translate-y-1/2">
+          <button class="p-8 pr-4 text-4xl font-black text-orange-rocamix" id="go-right-slider">
+            &rang;
+          </button>
+        </div>
 
         <footer id="slider-nodes" class="absolute bottom-5 left-1/2 -translate-x-1/2 py-2 px-4 rounded-full bg-opacity-30 z-50 flex gap-2 bg-black-rocamix">
         </footer>
@@ -244,23 +256,26 @@
       </figure>
     </section>
 
-    <footer class="bg-gradient-to-t to-[#FFA800] from-[#FF6D00] max-xl:px-6 px-12 py-12 flex justify-between items-center max-md:flex-col max-md:gap-12">
-      <img src="./assets/logo3.png" class="saturate-100 grayscale brightness-[400%] h-full max-w-[216px] object-cover" alt="Icono de Rocamix Hormigones" title="Icono de Rocamix Hormigones" />
+    <footer class="bg-gradient-to-t to-[#FFA800] from-[#FF6D00] max-xl:px-6 px-12 py-12">
+      <div class="flex justify-between items-center max-md:flex-col max-md:gap-12">
+        <img src="./assets/logo3.png" class="saturate-100 grayscale brightness-[400%] h-full max-w-[216px] object-cover" alt="Icono de Rocamix Hormigones" title="Icono de Rocamix Hormigones" />
 
-      <div class="flex flex-col justify-end gap-4 max-md:items-center">
-        <div class="flex items-center gap-2">
-          <img src="./assets/brand-whatsapp.svg" alt="Logo de Whatsapp" title="Logo de Whatsapp" />
-          <a title="Ir a whatsapp" target="_blank" href="https://wa.link/1ns87q" class="text-white text-[19px] hover:text-orange-200">+54 11 2526 1116</a>
-        </div>
-        <div class="flex items-center gap-2">
-          <img src="./assets/brand-instagram.svg" alt="Logo de Instagram" title="Logo de Instagram" />
-          <a title="Ir a instagram" target="_blank" href="https://www.instagram.com/rocamixhormigones/" class="text-white text-[19px] hover:text-orange-200">rocamixhormigones</a>
-        </div>
-        <div class="flex items-center gap-2">
-          <img src="./assets/mail.svg" alt="Logo de Mail" title="Logo de Mail" />
-          <a title="Ir a mail" target="_blank" href="mailto:rocamixhormigones@gmail.com" class="text-white text-[19px] hover:text-orange-200">rocamixhormigones@gmail.com</a> 
+        <div class="flex flex-col justify-end gap-4 max-md:items-center">
+          <div class="flex items-center gap-2">
+            <img src="./assets/brand-whatsapp.svg" alt="Logo de Whatsapp" title="Logo de Whatsapp" />
+            <a title="Ir a whatsapp" target="_blank" href="https://wa.link/1ns87q" class="text-white text-[19px] hover:text-orange-200">+54 11 2526 1116</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <img src="./assets/brand-instagram.svg" alt="Logo de Instagram" title="Logo de Instagram" />
+            <a title="Ir a instagram" target="_blank" href="https://www.instagram.com/rocamixhormigones/" class="text-white text-[19px] hover:text-orange-200">rocamixhormigones</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <img src="./assets/mail.svg" alt="Logo de Mail" title="Logo de Mail" />
+            <a title="Ir a mail" target="_blank" href="mailto:rocamixhormigones@gmail.com" class="text-white text-[19px] hover:text-orange-200">rocamixhormigones@gmail.com</a> 
+          </div>
         </div>
       </div>
+      <h2 class="text-center ">&copy; Desarrollado por <a target="_blank" href="https://www.instagram.com/ufo.development">UFO Development</a> | 2024</h2>
     </footer>
 
     <a href="https://wa.link/1ns87q" target="_blank" class="bg-green-400 rounded-full fixed right-3 bottom-3 z-[999] flex items-center justify-center w-14 h-14">
