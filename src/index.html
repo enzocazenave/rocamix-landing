@@ -41,7 +41,7 @@
       </nav>
     </header>
 
-    <section class="max-h-dvh flex flex-col pt-[80.47px]" id="home">
+    <section class="min-[830px]:h-dvh max-h-dvh flex flex-col pt-[80.47px]" id="home">
       <div class="flex-1 flex justify-center items-center overflow-hidden relative">
         <div class="absolute w-full h-full bg-black bg-opacity-50 left-0 top-0 z-40"></div>
         <div class="h-1 bg-orange-rocamix top-0 w-full absolute z-50 no-shrink" id="slider-top-bar"></div>
@@ -194,7 +194,7 @@
       <div class="grid grid-cols-2 mt-24 w-full gap-24 max-lg:grid-cols-1">
         <div class="flex flex-col justify-center items-center gap-4">
           <div class="w-full h-[530px] border rounded-3xl shadow overflow-hidden relative">
-            <div class="absolute bg-orange-rocamix z-50 left-1/2 top-1 -translate-x-1/2 px-4 py-1 rounded-full flex items-center gap-2">
+            <div class="absolute bg-orange-rocamix z-50 left-1/2 top-1 -translate-x-1/2 px-4 py-1 rounded-full flex items-center gap-2 max-[830px]:hidden">
               <img src="./assets/map-pin.svg" alt="Icono de pin de localizacion" title="Icono de pin de localizacion" class="saturate-100 grayscale brightness-[400%]" />
               <span class="text-white font-medium text-center">
                 Encontranos aquí
@@ -258,7 +258,7 @@
 
     <footer class="bg-gradient-to-t to-[#FFA800] from-[#FF6D00] max-xl:px-6 px-12 py-12">
       <div class="flex justify-between items-center max-md:flex-col max-md:gap-12">
-        <img src="./assets/logo3.png" class="saturate-100 grayscale brightness-[400%] h-full max-w-[216px] object-cover" alt="Icono de Rocamix Hormigones" title="Icono de Rocamix Hormigones" />
+        <img src="./assets/logo3.png" class="saturate-100 grayscale brightness-[400%] max-[830px]:h-full w-full max-w-[216px] object-cover" alt="Icono de Rocamix Hormigones" title="Icono de Rocamix Hormigones" />
 
         <div class="flex flex-col justify-end gap-4 max-md:items-center">
           <div class="flex items-center gap-2">
@@ -275,7 +275,7 @@
           </div>
         </div>
       </div>
-      <h2 class="text-center ">&copy; Desarrollado por <a target="_blank" href="https://www.instagram.com/ufo.development">UFO Development</a> | 2024</h2>
+      <h2 class="text-center mt-4">&copy; Desarrollado por <a target="_blank" href="https://www.instagram.com/ufo.development">UFO Development</a> | 2024</h2>
     </footer>
 
     <a href="https://wa.link/1ns87q" target="_blank" class="bg-green-400 rounded-full fixed right-3 bottom-3 z-[999] flex items-center justify-center w-14 h-14">

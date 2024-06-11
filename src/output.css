@@ -691,6 +691,14 @@ video {
   margin-top: 2.25rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .block {
   display: block;
 }
@@ -782,6 +790,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-52 {
+  width: 13rem;
 }
 
 .max-w-2xl {
@@ -1486,6 +1498,11 @@ video {
   .min-\[830px\]\:bg-red-400 {
     --tw-bg-opacity: 1;
     background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+  }
+
+  .min-\[830px\]\:bg-red-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(239 68 68 / var(--tw-bg-opacity));
   }
 }
 
